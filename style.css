@@ -1,0 +1,561 @@
+/* Juliette Park
+   Dubvelopers Personal Website
+   December 20, 2022
+*/
+
+/* RESET STYLESHEET */
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* MY CODE START HERE */
+
+body {
+    background-color: #F8EFDF;
+}
+
+/* HEADER CONTAINING NAVIGATION BAR */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 110px;
+    /*background-color: rgb(224, 192, 150);*/
+    margin: 0 1.3em;
+
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo img {
+    width: 3.3em;
+    margin: 0 0.7em 0 1.2em;
+    padding: 0.5em;
+    transition: 0.2s;
+    position: relative;
+}
+
+/* .logo img:hover {
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: black;
+} */
+
+.navigation li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.6em 1.1em;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-family: 'Gaegu', cursive;
+    line-height: 100px;
+    /* Second element creates padding on left and right side */
+    position: relative;
+    padding: 16px 30px;
+    background:rgb(255, 251, 251);
+    color:rgb(149, 77, 68);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.navigation li a:hover {
+    background:burlywood;
+    color:#fff;
+    letter-spacing: 4px;
+    border: 2px solid;
+}
+
+.social-icon {
+    display: flex;
+    /* For this to work, must be put inside element
+    that directly houses the items */
+    justify-content:flex-end;
+    align-items: center;
+
+    /* To shift to right end */
+    margin-left: auto;
+}
+
+.social-icon li {
+    display:inline-block;
+    list-style: none;
+    margin-right: 1.3em;
+}
+
+.social-icon li a ion-icon {
+    height: 2.7em;
+    width: 2.7em;
+    color:rgb(112, 45, 14);
+}
+
+/* BODY AND CONTENT */
+
+.wrapper{
+    /* auto takes space from left and right and divides by two*/
+    margin: 0 auto;
+    /*how much space content has inside website*/
+    width: 98%;
+}
+
+.background {
+    border-radius: 15px;
+    position: absolute;
+    opacity: 0.7;
+    width: 80%;
+    height: 80%;
+    margin: 0 10%;
+}
+
+.name-block {
+    height: 900px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+
+    /* background-image: url("images/blob-background.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.name-block h2 {
+    text-decoration: none;
+    display: block;
+    color:rgb(95, 70, 35);
+    color:rgb(112, 45, 14);
+    color:rgb(103, 54, 31);
+    font-size: 150px;
+    
+    /* background-image: url("images/blob1.jpg"); */
+    /*font-family: 'Lora', serif;*/
+    /* font-family: 'Krub', sans-serif; */
+    font-family: 'Handlee', cursive;
+    /* font-family: 'Mali', cursive; */
+    /* font-family: 'Mansalva', cursive; */
+    /* font-family: 'Pangolin', cursive; */
+    line-height: 1.2em;
+    letter-spacing: 0.09em;
+    z-index: 1;
+}
+
+.boxes {
+    display: flex;
+    align-content:center;
+}
+
+.boxes p {
+    box-sizing: border-box;
+    float: left;
+    width: 45%;
+    /* border: 5px solid rgb(103, 54, 31); */
+    padding: 2%;
+    font-family: 'Gaegu', cursive;
+    font-size: 2.1em;
+    border-radius: 15px;
+    margin: 2% 2%;
+    color:rgb(103, 54, 31);
+    line-height: 1.3em;;
+}
+
+.boxes p img {
+    max-width:85%;
+    border-radius: 15px;
+    place-content: center;
+}
+
+main div h2 {
+    font-family: 'Handlee', cursive;
+    text-align: center; 
+    margin-top: 7%;
+    font-size: 2em;
+    color:rgb(112, 45, 14);
+}
+
+.button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    margin-bottom: 10em;
+} 
+
+.button a {
+    position: relative;
+    padding: 25px 40px;
+    background-color:rgb(103, 54, 31);
+    color:rgb(255, 251, 251);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    border-radius: 15px;
+    font-family: 'Handlee', cursive;
+}
+
+.button a:hover{
+    background:burlywood;
+    color:#fff;
+    letter-spacing: 4px;
+}
+
+.footer {
+    height: 100px;
+    background-color:rgb(103, 54, 31);
+}
+
+footer .social-icon li a ion-icon {
+    color:rgb(255, 251, 251);
+    margin-top: 23px;
+}
+
+
+/* ---- PORTFOLIO RULES ---- */
+
+.projects {
+    float: left;
+    margin-top: 50px;
+    margin-left: 3%;
+    width: 40%;
+    height: 100%;
+    border: 3px solid;
+    border-radius: 15px;
+    text-align: center;
+    color:#fff;
+    margin-bottom: 10em;
+    /* background-color: aqua; */
+}
+
+.projectsHeader {
+    font-family: 'Gaegu', cursive;
+    text-transform: uppercase;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.projectsDescr {
+    color:rgb(149, 77, 68);
+    font-family: 'Gaegu', cursive;
+    text-align: left;
+}
+
+.projImage {
+    height: 65%;
+    width: 65%;
+    border-radius: 8px;
+    transition: 0.2s;
+    
+    display: block;
+    margin: auto;
+    margin-bottom: 4%;
+}
+
+/* .projImage:hover {
+    border: 2px solid rgb(184, 123, 123);
+    transition: 0.2s;
+} */
+
+.projLink{
+    text-align: center;
+    font-size: 2em;
+    color:rgb(149, 77, 68);
+
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transition: 0.2s;
+
+    font-family: 'Pangolin';
+    border: 5px solid;
+    padding: 5%;
+    margin: 3% 15%;
+
+    border-radius: 15px;
+    background-color: rgb(255, 251, 251);
+}
+
+.projLink:hover {
+    letter-spacing: 1px;
+}
+
+.projects a ion-icon {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    /* margin-bottom: 100px; */
+    color: rgb(184, 123, 123);
+    transition: 0.2s;
+    display: block;
+    margin:auto;
+    margin-bottom: 3%;
+}
+
+.projects a ion-icon:hover{
+    color:rgb(149, 77, 68);
+}
+
+.portButton {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color:rgb(103, 54, 31);
+    color:rgb(255, 251, 251);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    border-radius: 15px;
+    font-family: 'Handlee', cursive;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 6%;
+}
+
+.portButton:hover {
+    background:burlywood;
+    color:#fff;
+    letter-spacing: 4px;
+}
+
+.timeline {
+    float: left;
+    /* box-sizing: border-box; */
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 3%;
+    border-radius: 15px;
+    background-color:rgb(255, 251, 251);
+    /* height: 80em; */
+    /* margin-bottom: 10em; */
+    /* background-color: red; */
+}
+
+.timelineHeader {
+    font-family: 'Gaegu', cursive;
+    letter-spacing: 0.5em;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.main-container {
+    margin: 5%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.middleLine {
+    border-left: 6px solid rgb(184, 123, 123);
+    height: 108%;
+    left: 28%;
+    position:absolute;
+    margin-top: -1%;
+    padding-top: -3%;
+}
+
+.text-wrapperleft {
+    text-align: left;
+    margin-left: 55%;
+}
+
+.text-wrapperright {
+    text-align: right;
+    margin-right: 55%;
+}
+
+.content {
+    background-color: #F8EFDF;
+    padding: 2%;
+    display: inline-block;
+    margin: 1%;
+    border-radius: 10px;
+    margin-top: 3%;
+    padding: 3% 4%;
+    border: 2px solid rgb(184, 123, 123);
+}
+
+.timelineDescr {
+    font-family: 'Gaegu', cursive;
+    font-family: 'Handlee', cursive;
+    font-family: 'Pangolin';
+    /* color: #616161; */
+    color:rgb(149, 77, 68);
+    font-weight: 200;
+    line-height: 125%;
+    font-size: 125%;
+    letter-spacing:2px;
+
+    font-size: 2em;
+    color:rgb(149, 77, 68);
+
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    
+    margin-top: 3%;
+}
+
+.content > h3 {
+    font-family: 'Handlee', cursive;
+    text-transform: capitalize;
+    color: #212121;
+    letter-spacing:1px;
+    font-size: 85%;
+    margin-top: 2%;
+}
+
+.skills {
+    text-transform: uppercase;
+    font-family: 'Gaegu', cursive;
+    /* color:rgb(184, 123, 123); */
+    color: #616161;
+    font-size: 85%;
+    line-height: 1.2em;
+    font-size: 125%;
+    margin-top: 3%;
+    font-size: 97%;
+}
+
+
+/* CHERRY FILE RULES */
+
+.gallery img{
+    background-color: aliceblue;
+    float:left;
+    margin: 8%;
+}
+
+.gallery img{
+    width: 10%;
+    height: 10%;
+    padding: 8%;
+}
+
+
+
+
+
+
+
+
+
+
